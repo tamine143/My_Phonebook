@@ -43,7 +43,7 @@
 
 			<center>
                 <h1>Welcome <?php echo $username; ?></h1>
-                <img src="icon1.png"  class="avatarhome"/>
+                <img src="img/icon1.png"  class="avatarhome"/>
       </center>
 
       <h3>Information Form</h3>

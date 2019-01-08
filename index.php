@@ -43,7 +43,7 @@
 			<div id="main-wrapper">
 				<center>
 					<h2>Login Form</h2>
-					<img src="icon1.png"	class="avatar"/>
+					<img src="img/icon1.png"	class="avatar"/>
 
 				</center> 
 			

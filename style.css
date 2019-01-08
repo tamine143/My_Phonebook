@@ -1,5 +1,5 @@
 body{
-	background-image: url(background.jpg);
+	background-image: url(img/background.jpg);
 	height: 100vh; 
 	background-size: cover;
 	background-position: center;
@@ -28,13 +28,19 @@ body{
 .avatar{
 	width: 150px;
 	text-align: center;
-	margin-left: 100px;
+	margin-left: 10px;
 }
 
 .avatarhome{
 	width: 150px;
 	text-align: center;
 	margin-left:40px;
+}
+
+.avatar_list{
+	width: 150px;
+	text-align: center;
+	margin-left:110px;
 }
 
 .myform{

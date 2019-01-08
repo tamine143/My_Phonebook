@@ -30,7 +30,7 @@ require 'dbconfig/config.php';
 				<div class="row justify-content-center">
 					<div class="col-6">
 						<h1>Welcome <?php echo $username; ?></h1>
-            <img src="icon1.png"  class="avatar"/>
+            <img src="img/icon1.png"  class="avatar_list"/>
 					</div>
 				</div>
 				
