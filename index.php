@@ -57,10 +57,7 @@
 				<a href="register.php"><input class="btn" type="button" id="register_btn" value="Register"/><br></a>
 			</form>
 			
-			<?php
 
-			
-			?>
 			</div>
 </body>
 </html>
