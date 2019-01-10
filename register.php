@@ -18,16 +18,16 @@ if(isset($_POST['submit_btn'])){
 	if($password != $cpassword){
 		$passworderr = 'Password not match';
 	}else{
-		$password = $_POST['cpassword'];
+		$password = ['cpassword'];
 	}
 	
+	$password = md5('$password');
 	if(empty($usernameerr) && empty($passworderr)){
-		$insert_account = mysqli_query($con, "INSERT INTO `user` (`id`, `username`, `password`) VALUES (NULL, '$username', ('$password'))");
+		$insert_account = mysqli_query($con, "INSERT INTO `user` (`id`, `username`, `password`) VALUES (NULL, '$username', '$password')");
 		if($insert_account){
 			echo "<script>alert('Added');</script>";
 		}
 	}
-	
 }
 ?>
 
@@ -57,7 +57,7 @@ if(isset($_POST['submit_btn'])){
 				<input name="cpassword" type="password" class="inputvalues" placeholder="Confirm your password" required/><br>
 				<?php echo $passworderr; ?>
 				<input name="submit_btn" input class="btn" type="submit" id="signup_btn" value="Sign Up"/><br>
-				<a href="index.php"><input type="button" input class="btn" id="back_btn" value="back"/></a>
+				<b>Already Register or Done Registering Click</b><a href="index.php"><input type="button" input class="btn" id="here_btn" value="Here"/></a>
 			</form>
 			</div>
 </body>

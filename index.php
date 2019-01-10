@@ -7,8 +7,8 @@
 		if(isset($_POST['login'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		
-		$query = "select * from user where username = '$username' AND password = ('$password')";
+			$password = md5('$password');
+		$query = "select * from user where username = '$username' AND password ='$password'";
 		$result = mysqli_query($con, $query);
 		$row = mysqli_fetch_array($result);
 		$count = mysqli_num_rows($result);
